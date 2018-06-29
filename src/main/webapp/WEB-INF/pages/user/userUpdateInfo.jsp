@@ -53,8 +53,8 @@
                                         <td>
                                             <div class="mdl-textfield mdl-js-textfield">
                                                 <input class="mdl-textfield__input" type="text" name="userName"
-                                                       value="${user.userName}">
-                                                <label class="mdl-textfield__label" for="userName"></label>
+                                                       value="${user.userName}" readonly>
+                                                <%--<label class="mdl-textfield__label" for="userName"></label>--%>
                                             </div>
                                         </td>
                                     </tr>
