@@ -111,8 +111,9 @@ public class UserController {
                     userLoginLog.setLoginDateTime(createLoginTime);
                     loginLogService.addUserLoginLog(userLoginLog);
 
-                    // 注册成功跳转
-                    request.setAttribute("username", username);
+                    // 注册成功跳转 注册成功时将username传入session，而不是request
+                    request.getSession().setAttribute("username",username);
+                    // request.setAttribute("username", username);
                     return "index";
                 } else {
                     request.setAttribute("Msg", "注册失败，用户名已被占用！");
