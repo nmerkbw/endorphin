@@ -58,11 +58,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col center">
                     <div align="center">
-                        <a class="mdl-button mdl-js-button mdl-color--pink-400 mdl-color-text--white"
-                           href="/userRegister">立即注册</a>
+                        <c:if test="${username == null}">
+                            <a class="mdl-button mdl-js-button mdl-color--pink-400 mdl-color-text--white"
+                               href="/userRegister">立即注册</a>
+                        </c:if>
                     </div>
                 </div>
             </div>
